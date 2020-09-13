@@ -43,7 +43,7 @@ public class ZkUtils {
     ExecutorService pool =
             new ThreadPoolExecutor(
                     Runtime.getRuntime().availableProcessors() * 2,
-                    10,
+                    100,
                     0L,
                     TimeUnit.MILLISECONDS,
                     new LinkedBlockingQueue<Runnable>(1024),
